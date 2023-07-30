@@ -1,0 +1,29 @@
+body{
+    background-color: aliceblue;
+}
+
+table{
+    background-color: aqua;
+    height: 200px;
+}
+th{
+    height: 50px;
+    font-size: larger;
+    color: red;
+    background-color: khaki;
+}
+td{
+    height: 70px;
+    width: 120px;
+    text-align: center;
+}
+
+.ney:hover{
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.footer{
+    display: block;
+}
