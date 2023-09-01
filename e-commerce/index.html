@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E commerce</title>
+    <meta name="description" content="This is a frontend Developer program">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:wght@100;300;500;900&display=swap"
+        rel="stylesheet">
+    <script src="./feather.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <!-- The header section -->
+    <header class="header">
+        <div class="container">
+
+            <!-- logo here -->
+            <div class="site_logo">
+                <img src="./img/Site_logo.png" alt="TMART">
+            </div>
+
+            <!-- Nav items here -->
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            
+            <!--  Menu icon here -->
+            <div class="menu_icon">
+                <i data-feather="user" style="color: #fff;"></i>
+                    <i data-feather="shopping-cart" style="color: #fff;">cart</i>
+                <i data-feather="menu" style="color: #fff;" onclick="showOverlay()"></i>
+            </div>
+        </div>
+
+        <div class="hero-product">
+            <p>New Product Collection</p>
+            <button>Shop Now</button>
+        </div>
+
+        <!-- Overlay here -->
+        <div id="overlay">
+            <nav id="overlay_nav">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="close_icon">
+                    <i data-feather="x" onclick="hideOverlay()"></i>
+                </div>
+                <script>
+                    feather.replace();
+            
+                    function showOverlay() {
+                        document.getElementById("overlay").style.display = "flex";
+                        document.getElementById("overlay").classList.add("slide-from-right");
+                    }
+            
+                    function hideOverlay() {
+                        document.getElementById("overlay").style.display = "none";
+                    }
+            
+            
+                </script>
+            </nav>
+           
+        </div>
+    </header>
+    <section class="categories">
+        <div class="cats">
+            <div class="furniture">
+                <h2>New Furniture <span class="break">Collection</span></h2>
+                <a href="#" class="shopnow_btn cat-line">Shop Now</a>
+            </div>
+            <div class="basket">
+                <h2>New Baskets <span class="break">Collection</span></h2>
+                <a href="#" class="shopnow_btn cat-line">Shop Now</a>
+            </div>
+        </div>
+        <h4>Best Products</h4>
+        <div class="products">
+        <div class="pr1">
+            <img src="" alt="">
+            <p>Christopher Knight furniture</p>
+            <p>$235.23</p>
+        </div>
+        <div class="pr2">
+            <img src="" alt="">
+            <p>Wheat Strow Unbreakable Cup</p>
+            <p>$67.15</p>
+        </div>
+        <div class="pr3">
+            <img src="" alt="">
+            <p>Adidas Classic bag</p> <br>
+            <p>$49.82</p>
+        </div>
+        <div class="pr4">
+            <img src="" alt="">
+            <p>Desk Pencil-Pen Holder</p>
+            <p>$22.30</p>
+        </div>
+        <div class="pr5">
+            <img src="" alt="">
+            <p>Ripple creake key holder</p>
+            <p>$8.13</p>
+        </div>
+        <div class="pr6">
+            <img src="" alt="">
+            <p>Economical cotton canvas</p>
+            <p>$11.08</p>
+        </div>
+        <div class="pr7">
+            <img src="" alt="">
+            <p>Michael Kors original </p>
+            <p>$16.10</p>
+        </div>
+        <div class="pr8">
+            <img src="" alt="">
+            <p>Bostanten women leather</p>
+            <p>$234.26</p>
+        </div>
+        </div>
+        <h4>Recent News</h4>
+       <div class="recent">
+        <div class="b1">
+            <img src="" alt="">
+            <p>How to optimize eCommerce store for Better Conventions</p>
+            <button>Read More</button>
+        </div>
+        <div class="b2">
+            <img src="" alt="">
+            <p>Understanding and implementing SEO for eCommerce Success</p>
+            <button>Read More</button>
+        </div>
+        <div class="b3">
+            <img src="" alt="">
+            <p>Effective email Marketing strategy for eCommerce Businesses</p>
+            <button>Read More</button>
+        </div>
+       </div>
+    </section>
+</body>
+<footer class="footer">
+    <h2>TMART</h2>
+    <p>Home Address and icon for address</p>
+    <p>Email address and its icon</p>
+    <p>Phone number and icon for phone number</p>
+    <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+    <input type="text" placeholder="Enter email address"> <hr>
+    <p>Copyright Tmart- All rights reserved</p>
+</footer>
+</html>

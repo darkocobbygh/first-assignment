@@ -1,0 +1,44 @@
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
+}
+
+.header{
+    background-image: url("../img//Hero.png");
+    width: 1280px;
+    height: 812px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px; /* 165% */
+    padding-right: 40px;
+    list-style: none;
+}
+.menu_icon{
+    display: flex;
+    gap: 20px;
+}
+
+.hero-product{
+    background: rgba(255, 255, 255, 0.83);
+    position: absolute;
+   margin-left: 25%;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 521px;
+    height: 204px;
+}
