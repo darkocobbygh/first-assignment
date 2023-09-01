@@ -29,6 +29,7 @@ li{
 .menu_icon{
     display: flex;
     gap: 20px;
+    color: #FFF;
 }
 
 .hero-product{
@@ -42,3 +43,66 @@ li{
     width: 521px;
     height: 204px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        height: 74px;
+        align-items: center;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .header{
+        display: flex;
+        height: 550px;
+        width: 100%;
+        background-size: cover;
+    }
+    .hero-product{
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        width: 450px;
+        height: 250px;
+    }
+
+    #overlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .close_icon{
+        color: #FFF;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        height: 74px;
+        align-items: center;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .header{
+        display: flex;
+        height: 550px;
+        width: 100%;
+        background-size: cover;
+    }
+    .hero-product{
+        display: flex;
+        width: 100px;
+        height: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
