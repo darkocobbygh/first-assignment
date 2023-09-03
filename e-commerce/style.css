@@ -55,6 +55,9 @@ line-height: 33px; /* 110% */
     padding-left: 10px;
     justify-content: space-between;
 }
+.rights{
+    padding: 0;
+}
 
 ul{
     margin-right: 20px;
