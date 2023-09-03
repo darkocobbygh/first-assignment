@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>E commerce</title>
-    <meta name="description" content="This is a frontend Developer program">
+    <head>
+        <title>E commerce website</title>
+        <link rel="stylesheet" href="style.css">
+         <meta name="description" content="This is a frontend Developer program">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,57 +12,32 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:wght@100;300;500;900&display=swap"
         rel="stylesheet">
     <script src="./feather.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/header.css">
-</head>
-
-<body>
-    <!-- The header section -->
-    <header class="header">
-        <div class="container">
-
-            <!-- logo here -->
-            <div class="site_logo">
-                <img src="./img/Site_logo.png" alt="TMART">
-            </div>
-
-            <!-- Nav items here -->
-            <nav class="nav">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="">
+                    <img src="./assets/logo_white.png" alt="">
+                </a>
                 <ul class="nav-menu">
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-
-            
-            <!--  Menu icon here -->
-            <div class="menu_icon">
-                <i data-feather="user"></i>
+                <div class="icons">
+                    <i data-feather="user">user</i>
                     <i data-feather="shopping-cart">cart</i>
-                <i data-feather="menu" onclick="showOverlay()"></i>
-            </div>
-        </div>
-
-        <div class="hero-product">
-            <p>New Product Collection</p>
-            <button>Shop Now</button>
-        </div>
-
-        <!-- Overlay here -->
-        <div id="overlay">
-            <nav id="overlay_nav">
-                <ul>
+                <i data-feather="menu">menu</i>
+                </div>
+            </nav>
+            <div>
+                <nav id="overlay">
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="close_icon">
-                    <i data-feather="x" onclick="hideOverlay()"></i>
-                </div>
-                <script>
+                    <script>
                     feather.replace();
             
                     function showOverlay() {
@@ -76,91 +51,104 @@
             
             
                 </script>
-            </nav>
-           
-        </div>
-    </header>
-    <section class="categories">
-        <div class="cats">
-            <div class="furniture">
-                <h2>New Furniture <span class="break">Collection</span></h2>
-                <a href="#" class="shopnow_btn cat-line">Shop Now</a>
+                </nav>
             </div>
-            <div class="basket">
-                <h2>New Baskets <span class="break">Collection</span></h2>
-                <a href="#" class="shopnow_btn cat-line">Shop Now</a>
+            <div class="hero-container">
+                <div class="hero-product">
+                    <p>New Product Collection</p>
+                    <a >SHOP NOW</a>
+                </div>
             </div>
-        </div>
-        <h4>Best Products</h4>
-        <div class="products">
-        <div class="pr1">
-            <img src="" alt="">
-            <p>Christopher Knight furniture</p>
-            <p>$235.23</p>
-        </div>
-        <div class="pr2">
-            <img src="" alt="">
-            <p>Wheat Strow Unbreakable Cup</p>
-            <p>$67.15</p>
-        </div>
-        <div class="pr3">
-            <img src="" alt="">
-            <p>Adidas Classic bag</p> <br>
-            <p>$49.82</p>
-        </div>
-        <div class="pr4">
-            <img src="" alt="">
-            <p>Desk Pencil-Pen Holder</p>
-            <p>$22.30</p>
-        </div>
-        <div class="pr5">
-            <img src="" alt="">
-            <p>Ripple creake key holder</p>
-            <p>$8.13</p>
-        </div>
-        <div class="pr6">
-            <img src="" alt="">
-            <p>Economical cotton canvas</p>
-            <p>$11.08</p>
-        </div>
-        <div class="pr7">
-            <img src="" alt="">
-            <p>Michael Kors original </p>
-            <p>$16.10</p>
-        </div>
-        <div class="pr8">
-            <img src="" alt="">
-            <p>Bostanten women leather</p>
-            <p>$234.26</p>
-        </div>
-        </div>
-        <h4>Recent News</h4>
-       <div class="recent">
-        <div class="b1">
-            <img src="" alt="">
-            <p>How to optimize eCommerce store for Better Conventions</p>
-            <button>Read More</button>
-        </div>
-        <div class="b2">
-            <img src="" alt="">
-            <p>Understanding and implementing SEO for eCommerce Success</p>
-            <button>Read More</button>
-        </div>
-        <div class="b3">
-            <img src="" alt="">
-            <p>Effective email Marketing strategy for eCommerce Businesses</p>
-            <button>Read More</button>
-        </div>
-       </div>
-    </section>
-</body>
-<footer class="footer">
-    <h2>TMART</h2>
-    <p>Home Address and icon for address</p>
-    <p>Email address and its icon</p>
-    <p>Phone number and icon for phone number</p>
-    <p>Subscribe to our newsletter and get 10% off your first purchase</p>
-    <input type="text" placeholder="Enter email address"> <hr>
-    <p>Copyright Tmart- All rights reserved</p>
-</footer>
+        </header>
+        <section>
+            <div class="categories">
+                <div class="furniture">
+                    <h2>New Furniture <span class="break">Collection</span></h2>
+                    <a href="#" class="shopnow_btn cat-line">SHOP NOW</a>
+                </div>
+                <div class="basket">
+                    <h2>New Baskets <span class="break">Collection</span></h2>
+                    <a href="#" class="shopnow_btn cat-line">SHOP NOW</a>
+                </div>
+            </div>
+                <h1 class="best-products">Best Products</h1>
+                <div class="products">
+                    <div class="pr1">
+                        <img src="" alt="">
+                        <p>Christopher <br> Knight furniture</p>
+                        <p>$235.23</p>
+                    </div>
+                    <div class="pr2">
+                        <img src="" alt="">
+                        <p>Wheat Strow <br>Unbreakable Cup</p>
+                        <p>$67.15</p>
+                    </div>
+                    <div class="pr3">
+                        <img src="" alt="">
+                        <p>Adidas <br>Classic bag</p> <br>
+                        <p>$49.82</p>
+                    </div>
+                    <div class="pr4">
+                        <img src="" alt="">
+                        <p>Desk Pencil-Pen <br> Holder</p>
+                        <p>$22.30</p>
+                    </div>
+                    <div class="pr5">
+                        <img src="" alt="">
+                        <p>Ripple creake key <br> holder</p>
+                        <p>$8.13</p>
+                    </div>
+                    <div class="pr6">
+                        <img src="" alt="">
+                        <p>Economical <br> cotton canvas</p>
+                        <p>$11.08</p>
+                    </div>
+                    <div class="pr7">
+                        <img src="" alt="">
+                        <p>Michael Kors <br> original </p>
+                        <p>$16.10</p>
+                    </div>
+                    <div class="pr8">
+                        <img src="" alt="">
+                        <p>Bostanten <br> women leather</p>
+                        <p>$234.26</p>
+                    </div>
+                    </div>
+                    <h1 class="recent-header">Recent News</h1>
+            <div class="recent">
+                <div class="b1">
+                    <img src="" alt="">
+                    <p>How to optimize eCommerce store <br> for Better Conventions</p>
+                    <a href="">READ MORE</a>
+                </div>
+                <div class="b2">
+                    <img src="" alt="">
+                    <p>Understanding and implementing SEO <br> for eCommerce Success</p>
+                    <a href="">READ MORE</a>
+                </div>
+                <div class="b3">
+                    <img src="" alt="">
+                    <p>Effective email Marketing strategy for <br> eCommerce Businesses</p>
+                    <a href="">READ MORE</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="address">
+                    <h2>TMART</h2>
+                    <p>194 Main Rd T, FS Rayed, USA</p>
+                    <p>info@tmart.org</p>
+                    <p>+233 244 244 244</p>
+                   </div>
+                    <div class="subs">
+                        <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                    <input type="text" placeholder="Enter email address">
+                    <button href="" class="regs">></button>
+             </div>
+            </div>
+            <hr>
+            <p class="cops">Copyright Tmart- All rights reserved</p>
+        </footer>
+    </body>
 </html>
